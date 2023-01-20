@@ -1,0 +1,91 @@
+
+
+
+---
+title: 'The Anatomy of a Plot'
+subtitle: "moving from ggplot2 to highcharter"
+output: 
+  flexdashboard::flex_dashboard:
+    vertical_layout: scroll
+    orientation: rows
+    css: ~/Documents/R/dashboard_source_folder/css/starlight_css.css
+    theme: bootstrap
+    
+---
+
+```{r setup, include=FALSE, message=FALSE, warning=FALSE}
+
+knitr::opts_chunk$set(echo = FALSE) # always echo=FALSE for dashboards. No need to show off. you can include source code if you want
+# bc you set echo to false, you don't actually need include=FALSE, message=FALSE, or warning=FALSE in the 
+# chunk "preamble" (can I call it that? if it's called something else can I still call it that?) 
+library(flexdashboard) # dashboards!
+library(highcharter)   # for interactive plots
+library(DT)            # for search/filter/downloadable tables
+library(tidyverse)     # doi
+options(scipen=999)    # keep scientific notation turned off
+#source('dashboard_source_folder/R/file_export_for_dashboards.R')
+
+```
+
+<div class="footer">
+  <p> NYR 2022 | Malorie Hughes | maloriejhughes@gmail.com | github.com/maloriejhughes </p>
+</div>
+  
+  
+Slides {data-orientation="columns"}
+=====================================
+
+Column {data-height=800}
+-------------------------------------
+
+```{r,dpi=240}
+knitr::include_url('Highcharter_Slides.html', height="850px")
+```
+
+
+
+  
+Bars & Columns {data-orientation="columns"}
+=====================================
+
+- first: the plot set up
+
+
+- labeled image of names of different parts of the plot that we will modify (legend, names, fill opacity, color, title, xaxis title/tic marks/min/max, hover, grid lines, themes ) 
+
+- labeling the bars through hover text
+
+- group by vs add series
+
+- names in legend
+
+- opacity
+
+- labeled image of code that controls the different parts of the plot,  side by side ggplot and highcharter
+
+
+  
+Lines  {data-orientation="columns"}
+=====================================
+
+
+- show in legend = false
+
+- markers radius
+
+- time x-axis
+
+- starting with blank plot when you have many groups and want to allow specific comparisons
+
+- zoom
+
+
+
+Bonus: super fancy  {data-orientation="columns"}
+=====================================
+
+vertical and horizontal lines
+
+
+line color based on y-value (conditional colors)
+

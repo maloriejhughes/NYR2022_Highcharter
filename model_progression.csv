@@ -1,0 +1,19 @@
+Group,Dataset,Method,Recall,Precision,Accuracy
+Redacted,holdout,A,0.53,0.67,0.92
+Redacted,holdout,B,0,NA,0.9
+Redacted,holdout,B,0.18,0.92,0.91
+Redacted,holdout,B,0.18,0.93,0.91
+Redacted,holdout,B,0.39,0.84,0.93
+Redacted,holdout,A + B,0.53,0.67,0.92
+Redacted,holdout,A + B,0.62,0.69,0.93
+Redacted,holdout,A + B,0.62,0.7,0.93
+Redacted,holdout,A + B,0.71,0.7,0.94
+Redacted,holdout,DT w/ B + A,0.18,0.92,0.91
+Redacted,holdout,DT w/ B + A + C,0.18,0.92,0.91
+Redacted,holdout,Filtered DT w/ B + A + C,0.19,0.92,0.92
+Redacted,holdout,Logistic,0.33,0.86,0.93
+Redacted,holdout,Logistic + RF Gini 10,0.19,0.92,0.92
+Redacted,holdout,Logistic + RF Gini 5,0.62,0.69,0.94
+Redacted,holdout,Logistic + RF Gini 1,0.4,0.83,0.94
+Redacted,holdout,Logistic + RF Gini 5 + D,0.61,0.67,0.94
+Redacted,holdout,Logistic w/out feature X,0.61,0.67,0.93

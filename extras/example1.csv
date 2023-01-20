@@ -1,0 +1,15 @@
+﻿id,example,ggplot,highcharter
+1,dodge_bar,ggplot(),highchart()
+1,dodge_bar,geom_bar(),"     hc_add_series( type=""column"""
+1,dodge_bar,"     aes(x=color , fill = cut)","     hcaes(x=color ,y= tot , group = cut)"
+1,dodge_bar,"     position = ""dodge""",
+1,dodge_bar,,
+1,dodge_bar,"ggtitle(""Another interesting title"")"," hc_title(text=""Another interesting title"")"
+1,dodge_bar,"xlab(""Cut"")","hc_xAxis(type=""category"", title = list( text=""Cut"" ) )"
+1,dodge_bar,"ylab(""Amount"")",
+2,stacked_bar,"geom_bar(aes(color, fill=cut), position=""stack"")"," hc_add_series(dat_sum , type=""column"", hcaes(color,tot,group=cut), stacking = ""normal"")"
+3,hc_legend,,"hc_legend( align = ""right"""
+3,hc_legend,,"          ,  verticalAlign = ""middle"" "
+3,hc_legend,,"          ,  layout = ""vertical"" )"
+4,opacity,," hc_add_series(….,opacity=.75)"
+4,opacity,or…,hc_plotOptions( column = list( opacity=.75 ) )
